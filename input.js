@@ -4,21 +4,23 @@ const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
   } else if (key === '\u0077') {
-    setInterval(() => {
-      connection.write("Move: up");
-    }, 150);
+    connection.write("Move: up");
   } else if (key === '\u0073') {
-    setInterval(() => {
-      connection.write("Move: down");
-    }, 150);
+    connection.write("Move: down");
   } else if (key === '\u0061') {
-    setInterval(() => {
-      connection.write("Move: left");
-    }, 150);
+    connection.write("Move: left");
   } else if (key === '\u0064') {
-    setInterval(() => {
-      connection.write("Move: right");
-    }, 150);
+    connection.write("Move: right");
+  } else if (key === '\u0067') {
+    connection.write("Say: Good game comerade");
+  } else if (key === '\u0068') {
+    connection.write("Say: Have fun!");
+  } else if (key === '\u006A') {
+    connection.write("Say: Just Kidding!");
+  } else if (key === '\u006B') {
+    connection.write("Say: Koolio!");
+  } else if (key === '\u006C') {
+    connection.write("Say: Loser!");
   }
 };
 
