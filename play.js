@@ -20,8 +20,8 @@ console.log('Connecting ...');
 //   return stdin;
 // };
 
-connect();
-setupInput();
+
+setupInput(connect());
 
 
 

@@ -17,3 +17,8 @@ const connect = function() {
 };
 
 module.exports = { connect };
+
+
+// conn.stdin.on('data', message => {
+//   client.write(message);
+// });
